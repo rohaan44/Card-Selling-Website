@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Card Limited</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="./Assets/java/java.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./Assets/Style/style.css">
+</head>
+<body style="height: 1500px;">
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><i class="bi bi-arrow-bar-up"></i></button>
+
+  <header>
+    <div class="container-fluid header">
+      <div class="header-icon py-1">
+        
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <a href="./Aboutus.HTML">About Us</a>
+        <a href="./contactus.html">Contact</a>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item line-2">
+              <a class="nav-link active" aria-current="page" href="./index.html">Main</a>
+            </li>
+            <li class="nav-item line-2">
+              <a class="nav-link" href="./wedding.html">Wedding card</a>
+            </li>
+            <li class="nav-item line-2">
+              <a class="nav-link" href="./scrolling invitation.html">Scroll Invitation</a>
+            </li>
+            <li class="nav-item line-2 dropdown">
+              <a class="nav-link dropdown" href="./Addons.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Addon
+              </a>
+              <ul class="dropdown-menu">
+                <li class="line-2"><a class="dropdown-item" href="./Menu cards.html">Menu Cards</a></li>
+                <li class="line-2"><a class="dropdown-item" href="./Birthday cards.html">Birthday Cards</a></li>
+                <li class="line-2"><a class="dropdown-item" href="./thankyou.html">Thank You Cards</a></li>
+                <li class="line-2"><a class="dropdown-item" href="./Bridal Shower .html">bridal shower</a></li>
+                <li class="line-2"><a class="dropdown-item" href="./Favour Boxes.html">Favour Boxes</a></li>
+                <li>
+                 
+                
+              
+              </ul>
+            </li>
+  
+          </ul>
+        <div class="me-auto"><a class="navbar-brand " href="#"><img src="./assets/images/main-logo/red card.png" alt=""></a></div>
+        
+        <div class="line-2"><a class="dropdownitem" onclick="openModal()" >Login </a>
+ <!-- The Modal -->
+ <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Login Form</h2>
+    <form>
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+</div>
+
+        </div>
+        <div class="icon text-align-center">
+
+         <a href="#"><i class="bi bi-facebook"></i></a>
+         <a href="#"><i class="bi bi-suit-heart"></i></a>
+         <a href="#"><i class="bi bi-backpack4"></i></a>
+       </div>
+      </div>
+    </div>
+  </nav>
+ 
+
+  <h1 class="text-center mt-5" style="color: #a38747;">Wedding Cards</h1>
+
+  <!-- <section class="working-section">
+
+        <div class="text-center" style="display: flex; justify-content: end;">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sort By Latest
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sort By Popularity</a></li>
+                  <li><a class="dropdown-item" href="#">Sort By Price: Low To high</a></li>
+                  <li><a class="dropdown-item" href="#">Sort By Price: High To Low</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+        </div>
+          </section> -->
+
+  <div class="container-fluid ui-directions">
+
+
+    <ul class="d-flex flex-row mt-5 ms-4" style="font-size: 14px;">
+
+      <a href="./index.html">
+        <li>Home</li>
+      </a>
+      <a href="./Addons.html">
+        <li>/ Addon</li>
+      </a>
+      <a href="./scrolling invitation.html">
+        <li>/ Scroll invitaions</li>
+      </a>
+
+    </ul>
+
+
+  </div>
+         
+  <section class="Wedding-cards">
+    <div class="container-fluid ">
+      <div class="row g-5   ms-auto ">
+        
+        
+        
+        <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3  ">
+            <a href="./Add to cart WC-01.html">
+              <div class="card">
+            <img src="./assets//images/wedding cards/9075-2-acrylic-invitations.jpg" class="img-fluid"
+              alt="...">
+            <p class="card-title mt-4">Card Code: H-9075</p>
+            <p class="card-text mt-2">Rs 200</p>
+           <button class="add">ORDER NOW</button>  
+           
+             
+            
+          </div></a>
+         </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          
+            <a href="./Add to cart WC-02.html"><div class="card">
+            <img src="./assets/images/wedding cards/9070-1.jpg" class="img-fluid" alt="...">
+          
+        
+            <p class="card-title mt-4">Card Code: H-9070</p>
+            <p class="card-text mt-2">Rs 300</p> 
+            <div class="d-flex justify-content-center">
+              <button class="add">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <a href="./Add to cart WC-03.html">              <div class="card"> 
+            <img src="./assets/images/wedding cards/9066.jpg" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-9066</p>
+            <p class="card-text mt-2 ">Rs 450</p>
+             <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <a href="./Add to cart WC-04.html">              <div class="card"> 
+            <img src="./assets/images/wedding cards/9065-2-wedding-card.jpg" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-9065</p>
+            <p class="card-text mt-2 ">Rs 250</p>
+            <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div> 
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <a href="./Add to cart WC-05.html">              <div class="card"> 
+            <img src="./assets/images/wedding cards/9063-1.jpg" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-9063</p>
+            <p class="card-text mt-2 ">Rs 550</p>
+             <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <a href="./Add to cart WC-06.html">              <div class="card"> 
+            <img src="./assets/images/wedding cards/9062.jpg" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-9062</p>
+            <p class="card-text mt-2 ">Rs 250</p>
+             <div class="d-flex justify-content-center">
+              <button class="add">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 ">
+          <a href="./Add to cart WC-07.html">
+          <div class="card"> 
+          <img src="./assets/images/wedding cards/9056.jpg" class="img-fluid">
+          <p class="card-title mt-4">Card Code: H-9056</p>
+            <p class="card-text mt-2">Rs 680</p> 
+            <div class="d-flex justify-content-center">
+              <button class="add">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+         <a href="./Add to cart WC-08.html"><div class="card"> 
+            <img src="./assets/images/wedding cards/9055-450x450.jpeg" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-9055</p>
+            <p class="card-text mt-2 ">Rs 550</p>
+             <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+     
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <a href="./Add to cart WC-09.html">              <div class="card hidden"> 
+            <img src="./assets/images/wedding cards/Scroll-wedding-cards-25-450x468.webp" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-9087</p>
+            <p class="card-text mt-2 ">Rs 450</p>
+             <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+         <a href="./Add to cart WC-10.html">               <div class="card hidden"> 
+            <img src="./assets/images/wedding cards/9054-F.jpg" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-9054</p>
+            <p class="card-text mt-2 ">Rs 500</p>
+            <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div> 
+          </div></a>
+        </div>
+      
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <a href="./Add to cart WC-11.html">              <div class="card hidden"> 
+            <img src="./assets/images/wedding cards/9070-2.jpg" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-9070</p>
+            <p class="card-text mt-2 ">Rs 350</p>
+            <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div> 
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+         <a href="./Add to cart WC-12.html">               <div class="card hidden"> 
+            <img src="./assets/images/wedding cards/9090-450x450.jpeg" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-9090</p>
+            <p class="card-text mt-2 ">Rs 200</p>
+             <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+        <a href="./Add to cart WC-13.html">                <div class="card hidden"> 
+            <img src="./assets/images/wedding cards/9051-2-450x450.jpeg" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-9051</p>
+            <p class="card-text mt-2 ">Rs 250</p>
+             <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+         <a href="./Add to cart WC-14.html">               <div class="card hidden"> 
+            <img src="./assets/images/wedding cards/9008-2-450x450.jpeg" class="img-fluid">
+          
+            <p class="card-title mt-2">Card Code: H-9008</p>
+            <p class="card-text mt-2 ">Rs 350</p>
+             <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <a href="./Add to cart WC-15.html">              <div class="card hidden"> 
+            <img src="./assets/images/wedding cards/9011-450x450.jpeg" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-9011</p>
+            <p class="card-text mt-2 ">Rs 500</p>
+             <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <a href="./Add to cart WC-16.html">              <div class="card hidden"> 
+            <img src="./assets/images/wedding cards/9019-450x450.jpeg" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-9019</p>
+            <p class="card-text mt-2 ">Rs 200</p>
+             <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+         <a href="./Add to cart WC-17.html">               <div class="card hidden"> 
+            <img src="./assets/images/wedding cards/wedding-card-8029.jpeg" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-8029</p>
+            <p class="card-text mt-2 ">Rs 400</p>
+             <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <a href="./Add to cart WC-18.html">              <div class="card hidden"> 
+            <img src="./assets/images/wedding cards/Scroll-Wedding-Cards-601-450x466.webp" class="img-fluid">
+         
+            <p class="card-title mt-4">Card Code: H-9091</p>
+            <p class="card-text mt-2">Rs 450</p>
+            <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div> 
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="card hidden"><a href="./Add to cart WC-19.html">          
+                
+            <img src="./assets/images/wedding cards/9053-1-450x450.jpeg" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-9053</p>
+            <p class="card-text mt-2">Rs 350</p> 
+            <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+         <a href="./Add to cart WC-20.html">               <div class="card hidden"> 
+            <img src="./assets/images/wedding cards/9015-1.webp" class="img-fluid">
+          
+            <p class="card-title mt-4">Card Code: H-9015</p>
+            <p class="card-text mt-2">Rs 300</p> 
+            <div class="d-flex justify-content-center">
+              <button class="add ">ORDER NOW</button>
+             </div>
+          </div></a>
+        </div>
+
+<div class="d-flex justify-content-center">
+        <div class="style2 ">
+          <a href="#"><span>LOAD MORE</span><i></i></a>
+        </div></div>
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-section mx-5">
+    <hr class="container"><br><br>
+     <footer>
+       
+           <div class="text-center">
+             Production time 7 – 10 working days.
+    
+           </div>
+           <div class="text-center mb-3">
+            
+     We use world’s best couriers DHL / FedEx, which takes 3 – 5 days to deliver Worldwide.
+           </div>
+           <div class="container-fluid">
+         <div class="row">
+           <hr class="container">
+           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 p-0">
+            <h4 class="footer-head">FOLLOW US<h3>
+           <p style="color: gray; text-decoration: none; font-size: 20px;" >+92 300 52 11 572</p>
+           <div class="footer-icon d-flex">
+           <a class="3" href="#"><i class="bi bi-facebook"></i></a>
+           <a href="#"><i class="bi bi-instagram"></i></a>
+           <a href="#"><i class="bi bi-whatsapp"></i></a>
+          
+            </div></div> 
+           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+             <div class="head-3">  
+             <h4 class="ms-5 footer-head">COMPANY</h2>
+             <div class="line-2">
+               <ul class="footer-list">
+               <li><a href="./Aboutus.HTML">About </a></li>
+               <li><a href="./contactus.html">Contact</a></li>
+               <li><a href="./Terms & Conditions.html">Terms & Conditions</a></li>
+               <li><a href="./Testimonail.html">Testimonials</a></li>
+             </ul>
+           </div>
+         </div>
+         </div>
+      
+           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+              <div class="head-3">
+             <h4 class="ms-5 footer-head">HELP</h3>
+           <div class="line-2">
+             <ul class="footer-list">
+             <li><a href="./Order Tracking.html">Order Tracking</a></li>
+             <li><a href="./Wishlists.html">Wishlists</a></li>
+             <li><a href="./Printing Fonts.html">Printing Fonts</a></li>
+             <li> <a href="./gallery.html">Gallery</a></li>
+             </ul></div>
+            </div>
+           </div>
+             
+             
+             
+            
+          
+           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+             <div class="head-3">
+          <h4 class="ms-5 footer-head">STORE</h3>
+         <div class="line-2">
+            <ul class="footer-list">
+              
+             <li> <a href="./wedding.html">Wedding Cards</a></li>
+             <li> <a href="./Favour Boxes.html">Favor Boxes</a></li>
+             <li><a href="./scrolling invitation.html">Scroll Invitations</a></li>
+             <li><a href="./add to card BL.html">Buy Samples</a></li>
+           </ul>
+         </div></div>
+           </div>
+          </div>
+           <hr>
+           <div class="text-center">
+             
+   ©2024 CARD ZONE - All Rights Reserved
+           </div>
+         </div>
+       </div>
+         </footer>
+   </section>
+   <script>
+        //  S(document).ready(function () {
+            // Get the modal
+var modal = document.getElementById('myModal');
+
+// Function to open the modal
+function openModal() {
+  modal.style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+  modal.style.display = "none";
+}
+
+// Close the modal when clicking outside of it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}  
+
+      
+      
+
+   </script> 
+   
+</body>
+
+</html>

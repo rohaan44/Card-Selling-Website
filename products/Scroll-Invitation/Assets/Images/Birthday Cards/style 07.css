@@ -1,0 +1,96 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+.icon a{
+    text-decoration: none;
+    color: rgb(78, 73, 73);
+    padding: 5px;
+}
+.navbar{
+    background-color:white;
+    height: 80px;
+}
+.header-icon img a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    text-align: center;
+    
+}
+.header-icon{
+    background-color:#795C34;
+    height: 50px;
+        
+}
+.header-icon a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    
+}.weight {
+    font-weight: 400;
+    font-size: 20px;
+    color: gray;
+}
+.yellow{
+    background-color: rgb(255, 185, 34);
+}
+.navbar-fluid{
+    background-color: transparent;
+}
+.header{
+    height: 30px;
+}
+.footer-flex a{
+    text-decoration: none;
+    color: rgb(80, 73, 73);
+    margin: 15px;
+}.link a {
+    color: rgb(83, 80, 80)12, 98, 98);
+    text-decoration: none;
+}
+.footer-h4{
+    color: gray;
+    font-size: 20px;
+    
+}.none{
+    list-style: none;
+    
+}
+/* transite */
+/* a{
+    position:relative;
+    display: flex;
+    background-color: #a77e4427;
+    
+    
+    
+}
+ a:hover:after{
+    content: "";
+    background-color: currentColor;
+    position: absolute;
+    height: 10%;
+    width: 0;
+    bottom: 0px;
+    transition: 25s;
+}
+ a::after{
+    animation-name: line;
+    animation-iteration-count: infinite;
+    animation-duration:1s ;
+}
+@keyframes line{
+
+    0%{
+        left: 0%;
+        width: 0%;
+    }
+    100%{
+        left: 0%;
+        width: 100%;
+    }
+}   */
+.button-dark{
+   background-color: #000;
+   color: white;
+} 
